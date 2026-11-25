@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Редирект с HTTPS на HTTP для o29369h1.beget.tech
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^o29369h1\.beget\.tech$ [NC]
+RewriteRule ^(.*)$ http://o29369h1.beget.tech/$1 [R=301,L]
